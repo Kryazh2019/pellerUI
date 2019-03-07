@@ -20,12 +20,33 @@
         <td class="text-right">{{event.clubid}}</td>
 
         <td class="text-center">
-            <button class="btn btn-xs btn-primary">
+            <button class="btn btn-xs btn-primary" ng-click="showTickets(event.event)">
                 Просмотреть билеты {{event.event}}
             </button>
         </td>
 
+        <ul class="ulClass">
+            <input type="text" ng-model="query">
+            <li ng-repeat="ticket in tickets | filter:query">
+                <div class="after-element1"></div>
+                <div class="after-element2"></div>
+                <div class="after-element3"></div>
+                <div class="after-element4"></div>
+                <div class="ticket-container">
 
+                    <img src="{{ticket.logo}}" alt="{{ticket.name}}">
+
+                    <div class="ticket-content">
+                        <div class="ticket-name">{{ticket.name}}</div>
+                        <div class="ticket-count">Capacity: {{ticket.count}}</div>
+                        <div class="ticket-desc">Desc: {{ticket.description}}</div>
+                        <div class="ticket-cost">${{ticket.price}}</div>
+                    </div>
+
+                </div>
+
+            </li>
+        </ul>
 
     </tr>
     </tbody>

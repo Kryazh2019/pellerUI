@@ -1,6 +1,5 @@
 var app = angular.module('pellerTest', ['ui.router']);
 
-
  app.config(['$stateProvider','$locationProvider', function($stateProvider, $locationProvider) {
      $locationProvider.html5Mode({
          enabled: true,
@@ -24,43 +23,3 @@ var app = angular.module('pellerTest', ['ui.router']);
          })
  }]);
 
-app.controller('homeController', ['$scope', '$stateParams', function($scope, $stateParams) {
-    console.log('It is homeController');
-}]);
-
-
-app.controller('eventsController', ['$scope', '$stateParams', function($scope, $stateParams) {
-    console.log('It is eventsController');
-}]);
-
-// myApp.controller('eventsController', ['$scope', '$stateParams', function($scope, $stateParams) {
-//     console.log(';lwf;el')
-// }]);
-//
-// myApp.controller('clubsController', ['$scope','GetDataService', function($scope, GetDataService) {
-//     let urlClubs = '../data/clubs.json';
-//     $scope.clubs = GetDataService.getAll(urlClubs);
-// }]);
-//
-//
-// myApp.service('GetDataService', ['$http', function($http) {
-//     var arrayData = [];
-//     function getClubs(url) {
-//         $http.get(url).success(function(data) {
-//             arrayData = data;
-//         })
-//             .error(function(data) {
-//                 console.log(data);
-//             })
-//     }
-//     getClubs();
-//     var service = {};
-//     service.getAll = function() {
-//         return arrayData;
-//     }
-//
-//     return service;
-//
-// }]);
-//
-//

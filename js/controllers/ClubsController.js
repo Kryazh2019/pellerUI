@@ -1,4 +1,5 @@
 
 app.controller('clubsController', ['$scope', '$stateParams', 'ClubsService' , function($scope, $stateParams, ClubsService) {
-    console.log('It is clubsController');
+    $scope.clubs = ClubsService.getAll();
+    console.log($scope.clubs);
 }]);
