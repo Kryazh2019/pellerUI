@@ -28,15 +28,16 @@
         <ul class="ulClass">
             <input type="text" ng-model="query">
             <li ng-repeat="ticket in tickets | filter:query">
-                <div class="after-element1"></div>
-                <div class="after-element2"></div>
-                <div class="after-element3"></div>
-                <div class="after-element4"></div>
+             
                 <div class="ticket-container">
 
                     <img src="{{ticket.logo}}" alt="{{ticket.name}}">
 
                     <div class="ticket-content">
+                        <div class="after-element"></div>
+                        <div class="after-element"></div>
+                        <div class="after-element"></div>
+                        <div class="after-element"></div>
                         <div class="ticket-name">{{ticket.name}}</div>
                         <div class="ticket-count">Capacity: {{ticket.count}}</div>
                         <div class="ticket-desc">Desc: {{ticket.description}}</div>

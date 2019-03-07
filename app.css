@@ -9,38 +9,16 @@ li {
     margin-bottom: 20px;
     margin-top:20px;
 }
-
-.after-element1::after {
-    content:'text';
-    width: 20px;
-    background: red;
-    height: 20px;
-    position:absolute;
-    top:156px;
+.after-element {
+    width: 100%;
 }
-.after-element2::after {
-    content:'text';
-    width: 20px;
+.after-element::before {
+    content:'';
     background: red;
-    height: 20px;
-    position:absolute;
-    top:190px;
 }
-.after-element3::after {
-    content:'text';
-    width: 20px;
-    background: red;
-    height: 20px;
-    position:absolute;
-    top:225px;
-}
-.after-element4::after {
-    content:'text';
-    width: 20px;
-    background: red;
-    height: 20px;
-    position:absolute;
-    top:260px;
+.after-element::after {
+    content:'';
+    background: green;
 }
 img {
     width: 100px;
