@@ -1,8 +1,8 @@
 app.factory('EventsService', ['$http', function($http) {
-    function getEvents() {
+    function getEvents(clubId) {
         return $http.get('../data/events.json').then((response) => {
             let filteredResponse = Object.keys(response).filter((event) => {
-               return  event.club == 1;
+               return  event.club == clubId;
             })
             return filteredResponse;
 
