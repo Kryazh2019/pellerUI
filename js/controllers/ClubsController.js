@@ -4,7 +4,7 @@ app.controller('clubsController', ['$scope', '$stateParams', 'ClubsService' , fu
     ClubsService.getClubs().then((response) => {
         $scope.loading = false;
         $scope.clubs = response.data;
-        console.log($scope.clubs);
+
     },()=> {
         $scope.loading = false;
     });

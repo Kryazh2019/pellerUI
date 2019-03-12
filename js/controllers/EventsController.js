@@ -1,10 +1,8 @@
 app.controller('eventsController',
     ['$scope', '$stateParams', 'EventsService', 'TicketsService',
     function($scope, $stateParams, EventsService, TicketsService) {
-        EventsService.getEvents($stateParams.id).then((response) => {
-            $scope.events = response.data;
-        })
 
+    $scope.events = EventsService.getEvents($stateParams.id);
     console.log($scope.events);
 
 
