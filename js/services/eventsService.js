@@ -5,7 +5,7 @@ app.factory('EventsService' , ['$http', function($http) {
         return $http.get('../data/events.json')
             .success(function(data) {
                 filteredEvents = data.filter((event) => {
-                    return event.club === id;
+                    return event.club == id;
                 })
                 return filteredEvents;
             })
