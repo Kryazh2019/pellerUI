@@ -4,22 +4,85 @@ li {
 .ticket-container {
     background:#37283C;
     color: #FFFFFF;
-    width: 260px;
+    width: 325px;
     height: 150px;
     margin-bottom: 20px;
     margin-top:20px;
 }
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17px;
+    padding-bottom: 3px;
+}
 .after-element {
-    width: 100%;
+
 }
 .after-element::before {
-    content:'';
-    background: red;
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 31px;
+    top: 159px;
+    border-radius: 45px;
+}
+.after-element2::before {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 31px;
+    top: 193px;
+    border-radius: 45px;
+}
+.after-element3::before {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 31px;
+    top: 227px;
+    border-radius: 45px;
+}
+.after-element4::before {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 31px;
+    top: 266px;
+    border-radius: 45px;
 }
 .after-element::after {
-    content:'';
-    background: green;
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 365px;
+    top: 159px;
+    border-radius: 45px;
 }
+.after-element2::after {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 365px;
+    top: 193px;
+    border-radius: 45px;
+}
+.after-element3::after {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 365px;
+    top: 227px;
+    border-radius: 45px;
+}
+.after-element4::after {
+    content: 'text';
+    background: white;
+    position: absolute;
+    left: 365px;
+    top: 266px;
+    border-radius: 45px;
+}
+
 img {
     width: 100px;
     height: 65px;
@@ -31,21 +94,18 @@ img {
 
 }
 .ticket-name {
-    padding-left: 5.2em;
-    font-size: 1.4em;
-    padding-top: 1em;
-    padding-bottom: 0.3em;
+    font-size: 27px;
 }
 .ticket-count {
-    padding-left: 7.4em;
+    color: #C9C5CA;
+    font-size: 20px;
+    padding-bottom: 24px;
+    padding-left: 128px;
 }
 .ticket-desc {
-    text-align: left;
-    padding-top: 2em;
-    padding-left: 0.6em;
+    padding-left: 10px;
 }
 .ticket-cost {
-    margin-top: -4.2em;
-    margin-left: 8.4em;
-    font-size: 1.5em;
+    font-size: 27px;
+    color: #EEA224;
 }
