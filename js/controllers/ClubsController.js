@@ -8,5 +8,4 @@ app.controller('clubsController', ['$scope', '$stateParams', 'ClubsService' , fu
     },()=> {
         $scope.loading = false;
     });
-    console.log($scope.clubs);
 }]);

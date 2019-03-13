@@ -12,12 +12,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="event in events ">
+    <tr ng-repeat="event in eventsFilter ">
         <td>{{event.name}}</td>
         <td class="text-right">{{event.date }}</td>
         <td class="text-right">{{event.timeStart}}</td>
         <td class="text-right">{{event.timeEnd}}</td>
-        <td class="text-right">{{event.clubid}}</td>
+        <td class="text-right">{{event.club}}</td>
 
         <td class="text-center">
             <button class="btn btn-xs btn-primary" ng-click="showTickets(event.event)">

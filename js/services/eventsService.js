@@ -1,14 +1,11 @@
-app.factory('EventsService', ['$http', function($http) {
-    let events = [];
+app.factory('EventsService' , ['$http', function($http) {
     let filteredEvents = [];
-
     let service = {};
     service.getEvents = function(id) {
-        $http.get('../data/events.json')
+        return $http.get('../data/events.json')
             .success(function(data) {
-                events = data;
-                filteredEvents = events.filter((event) => {
-                    return event.club == id;
+                filteredEvents = data.filter((event) => {
+                    return event.club === id;
                 })
                 return filteredEvents;
             })
