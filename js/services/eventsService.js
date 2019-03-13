@@ -3,15 +3,15 @@ app.factory('EventsService' , ['$http', function($http) {
     let service = {};
     service.getEvents = function(id) {
         return $http.get('../data/events.json')
-            .success(function(data) {
-                filteredEvents = data.filter((event) => {
+            .then(function(data) {
+                filteredEvents = data.data.filter((event) => {
                     return event.club == id;
                 })
                 return filteredEvents;
-            })
-            .error(function(data) {
+            }, function(data) {
                 console.log(data);
             })
+
     }
     return service;
 }])
