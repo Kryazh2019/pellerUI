@@ -6,6 +6,17 @@ li {
     flex-flow: row wrap;
     padding-left: 0;
 }
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sorry {
+    font-size: 48px;
+}
+filtr {
+    border: 2px solid #37283C;
+}
 .ticket-container {
     position: relative;
     box-sizing: border-box;

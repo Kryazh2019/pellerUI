@@ -1,7 +1,10 @@
 
 <h1>События</h1>
-
-<table class="table table-striped">
+<div ng-if="error" class="error">
+    <div class="sorry">Sorry... Something went wrong.</div>
+    <img src="../img/error.png">
+</div>
+<table ng-if="!error" class="table table-striped">
     <thead>
     <tr>
         <th>Название</th>
@@ -12,7 +15,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="event in eventsFilter ">
+    <tr  ng-repeat="event in eventsFilter ">
         <td>{{event.name}}</td>
         <td class="text-right">{{event.date }}</td>
         <td class="text-right">{{event.timeStart}}</td>
@@ -24,7 +27,7 @@
                 Просмотреть билеты {{event.event}}
             </button>
         </td>
-        <input type="text" ng-model="query">
+        <input class="filtr" ng-if="!error" type="text" ng-model="query">
         <ul class="ulClass">
 
             <li ng-repeat="ticket in tickets | filter:query">
