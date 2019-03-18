@@ -1,111 +1,68 @@
 li {
     list-style: none;
 }
+.ulClass {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+}
 .ticket-container {
-    background:#37283C;
-    color: #FFFFFF;
-    width: 325px;
-    height: 150px;
-    margin-bottom: 20px;
-    margin-top:20px;
+    position: relative;
+    box-sizing: border-box;
+    width: 19rem;
+    height: 7rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #37283C;
+    color: #fff;
+    max-width: 100%;
+}
+
+.ticket-container:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    height: 106%;
+    width: 100%;
+    top: -5px;
+    background: radial-gradient(circle at right, transparent, transparent 40%, #FBFBFB 28%, #FBFBFB 100%) -6px 6px / 14px 23px repeat-y;
+}
+.ticket-container:after {
+    content: '';
+    position: absolute;
+    left: 298px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -10px 0px / 18px 23px repeat-y;
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 17px;
     padding-bottom: 3px;
 }
-.after-element {
-
-}
-.after-element::before {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 31px;
-    top: 159px;
-    border-radius: 45px;
-}
-.after-element2::before {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 31px;
-    top: 193px;
-    border-radius: 45px;
-}
-.after-element3::before {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 31px;
-    top: 227px;
-    border-radius: 45px;
-}
-.after-element4::before {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 31px;
-    top: 266px;
-    border-radius: 45px;
-}
-.after-element::after {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 365px;
-    top: 159px;
-    border-radius: 45px;
-}
-.after-element2::after {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 365px;
-    top: 193px;
-    border-radius: 45px;
-}
-.after-element3::after {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 365px;
-    top: 227px;
-    border-radius: 45px;
-}
-.after-element4::after {
-    content: 'text';
-    background: white;
-    position: absolute;
-    left: 365px;
-    top: 266px;
-    border-radius: 45px;
-}
 
 img {
-    width: 100px;
-    height: 65px;
+    width: 30%;
+    height: auto;
     float: left;
-    padding-top: 1em;
-    padding-left: 0.6em;
-}
-.ticket-content {
-
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+    margin-right: 1rem;
 }
 .ticket-name {
-    font-size: 27px;
+
 }
 .ticket-count {
     color: #C9C5CA;
-    font-size: 20px;
-    padding-bottom: 24px;
-    padding-left: 128px;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
 }
 .ticket-desc {
-    padding-left: 10px;
+    padding-left: 0.7rem;
 }
 .ticket-cost {
-    font-size: 27px;
+    padding-right: 0.6rem;
     color: #EEA224;
 }

@@ -16,6 +16,14 @@
     "logo": "../img/guci.jpg"
   },
   {
+    "name": "Ticket2",
+    "price": 200,
+    "count": 20,
+    "description": "Some description2",
+    "event": 1,
+    "logo": "../img/guci.jpg"
+  },
+  {
     "name": "Ticket3",
     "price": 300,
     "count": 30,

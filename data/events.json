@@ -16,6 +16,14 @@
     "event": 2
   },
   {
+    "name": "Event2",
+    "date": "12.01.2017",
+    "timeStart": "17:00",
+    "timeEnd": "19:00",
+    "club": 1,
+    "event": 2
+  },
+  {
     "name": "Event3",
     "date": "15.11.2000",
     "timeStart": "10:00",
