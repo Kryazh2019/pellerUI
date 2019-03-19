@@ -21,7 +21,7 @@ filtr {
     position: relative;
     box-sizing: border-box;
     width: 19rem;
-    height: 7rem;
+    min-height: 7rem;
     margin-right: 10px;
     margin-bottom: 10px;
     background: #37283C;
@@ -55,15 +55,20 @@ filtr {
 }
 
 img {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 16px;
     width: 30%;
     height: auto;
-    float: left;
-    padding-left: 0.7rem;
     padding-top: 0.7rem;
-    margin-right: 1rem;
 }
 .ticket-name {
 
+}
+.ticket-content {
+    padding-left: 10px;
+    display: inline-block;
+    width: 175px !important;
 }
 .ticket-count {
     color: #C9C5CA;
