@@ -33,19 +33,19 @@ filtr {
     content: '';
     position: absolute;
     left: 0px;
-    height: 106%;
+    height: 100%;
     width: 100%;
-    top: -5px;
-    background: radial-gradient(circle at right, transparent, transparent 40%, #FBFBFB 28%, #FBFBFB 100%) -6px 6px / 14px 23px repeat-y;
+    top: 0px;
+    background: radial-gradient(circle at right, white, white 40%, #37283C 28%, #37283C 100%) 290px 48px / 14px 23px repeat-y
 }
 .ticket-container:after {
     content: '';
     position: absolute;
-    left: 298px;
+    left: 0px;
     height: 100%;
     width: 100%;
     top: 0px;
-    background: radial-gradient(circle, transparent, transparent 50%, #FBFBFB 50%, #FBFBFB 100%) -10px 0px / 18px 23px repeat-y;
+    background: radial-gradient(circle at left, white, white 40%, #37283C 28%, #37283C 100%) 0px 48px / 14px 23px repeat-y;
 }
 .header {
     display: flex;
@@ -76,7 +76,7 @@ img {
     padding-bottom: 1rem;
 }
 .ticket-desc {
-    padding-left: 0.7rem;
+    padding-left: 0.9rem;
 }
 .ticket-cost {
     padding-right: 0.6rem;
