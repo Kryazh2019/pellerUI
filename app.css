@@ -1,10 +1,24 @@
 li {
     list-style: none;
 }
-.ulClass {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 0;
+.ticketMain {
+    display: inline-block;
+}
+.c {
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+  }
+   .c:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+    color: #a00;
+   }
+.a {
+    text-decoration: none;
+    color: #fff;
 }
 .error {
     display: flex;
@@ -28,7 +42,10 @@ filtr {
     color: #fff;
     max-width: 100%;
 }
-
+.ticket-container:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: linear-gradient(#37283C, #33332c);
+}
 .ticket-container:before {
     content: '';
     position: absolute;

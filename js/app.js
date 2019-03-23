@@ -21,5 +21,16 @@ var app = angular.module('pellerTest', ['ui.router']);
              templateUrl:'./pages/events.html',
              controller: 'eventsController'
          })
+         .state('eventsId', {
+             url:'/event/:eventId',
+             templateUrl:'./pages/event.html',
+             controller: 'eventController'
+         })
+         .state('tickets', {
+             url:'/ticket/:ticketId',
+             templateUrl:'../pages/ticket.html',
+             controller:'eventController'
+         })
  }]);
+
 

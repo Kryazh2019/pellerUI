@@ -1,16 +1,27 @@
 app.factory('TicketsService', ['$http', function($http) {
-    let filteredTickets = [];
+
     let service = {};
     service.getTickets = function(id) {
        return $http.get('../data/tickets.json')
            .then(function(data) {
-               filteredTickets = data.data.filter((ticket) => {
+               let filteredTickets = data.data.filter((ticket) => {
                    return ticket.event == id;
                })
                return filteredTickets;
-           }, function(data) {
-               console.log(data);
+           }, function(error) {
+               throw new Error(error.status);
            })
+    }
+    service.getTicket = function(id) {
+        return $http.get('../data/tickets.json')
+            .then(function(data) {
+                let filteredTicket = data.data.filter((ticket) => {
+                    return ticket.id == id;
+                })
+                return filteredTicket;
+            }, function(error) {
+                throw new Error(error.status);
+            })
     }
     return service;
 }])

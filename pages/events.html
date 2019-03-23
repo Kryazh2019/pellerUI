@@ -23,9 +23,10 @@
         <td class="text-right">{{event.club}}</td>
 
         <td class="text-center">
-            <button class="btn btn-xs btn-primary" ng-click="showTickets(event.event)">
+            <!-- <button class="btn btn-xs btn-primary" ng-click="showTickets(event.event)">
                 Просмотреть билеты {{event.event}}
-            </button>
+            </button> -->
+            <a href="/event/{{event.event}}">Просмотреть событиe</a>
         </td>
         <input class="filtr" ng-if="!error" type="text" ng-model="query">
         <ul class="ulClass">
