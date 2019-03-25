@@ -4,6 +4,9 @@ li {
 .ticketMain {
     display: inline-block;
 }
+.show a{
+    display: none;
+}
 .c {
     border: 1px solid #333; /* Рамка */
     display: inline-block;

@@ -1,6 +1,6 @@
 <div ng-repeat="ticket in tickets ">
     <div class="ticket-container" >
-        <a class="a" href="/ticket/{{ticket.id}}">
+       
         <img src="{{ticket.logo}}" alt="{{ticket.name}}">
 
         <div class="ticket-content">
@@ -13,7 +13,7 @@
 
         </div>
         <div class="ticket-desc">Desc: {{ticket.description}}</div>
-    </a>
+  
     </div>
     <a href="/ticket/{{ticket.id}}" ng-click="showTickets(ticket.id)">Просмотреть билет</a>
 </div>

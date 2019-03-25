@@ -1,5 +1,5 @@
 
- app.component('ticket', {
+ app.component('tickets', {
      bindings: {
          info: '=info'
      },

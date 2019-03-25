@@ -1,6 +1,7 @@
 app.controller('eventController',
 ['$scope', '$stateParams', 'EventsService','TicketsService',
 function($scope, $stateParams, EventsService, TicketsService) {
+    showticket = false;
     $scope.error = false;
     $scope.eventInfo = EventsService.getEvents($stateParams.eventId)
         .then(function successCallback(response) {
@@ -19,7 +20,8 @@ function($scope, $stateParams, EventsService, TicketsService) {
             $scope.tickets = response;
             console.log("Билеты" + $scope.tickets);
         })
-
+    
+    
     $scope.showTickets = function(id) {
         $scope.tickets = TicketsService.getTicket(id)
         .then(response => {
@@ -27,5 +29,6 @@ function($scope, $stateParams, EventsService, TicketsService) {
             console.log("Билеты123123" + $scope.tickets);
         })
     }
+    
 
 }])
